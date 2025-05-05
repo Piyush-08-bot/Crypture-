@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'nb';
+    src: url(../assets/Font/NBInternationalProBoo.ttf);
+}
+
+.navbar {
+    font-family: nb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    position: relative;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #2db4fd;
+  }
+  
+  /* Nav Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #00a6ff;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .login {
+    background-color: transparent;
+    border: 1px solid #00a6ff;
+    color: #00a6ff;
+  }
+  
+  .signup {
+    background-color: #00a6ff;
+    color: #121212;
+    margin-left: 8px;
+  }
+  
+  /* Hamburger */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background-color: #121212;
+      padding: 1rem 0;
+      display: none;
+      align-items: center;
+    }
+  
+    .nav-links.mobile {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .btn {
+      margin-top: 10px;
+    }
+  }
+  
