@@ -57,7 +57,7 @@
   .feature-card:hover {
     transform: translateY(-5px);
     border: 1px solid #2db4fd;
-    box-shadow: 0 3px 30px rgba(45, 180, 253, 0.3);
+    box-shadow: 0 3px 30px #2db4fd4d;
   }
   .feature-card:hover .feature-text h3 {
     color: #2db4fd; /* Change the color of h3 when hovering the feature-card */
@@ -65,19 +65,25 @@
   .feature-icon {
     min-width: 50px;
     min-height: 50px;
-    background-color: #1a1a1a;
+    background-color: #2db4fd4d;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease;
+  }
+
+  .custom-icon {
+    color: #2db4fd;
+    transition: transform 0.3s ease;
   }
   
-  .feature-icon img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
+  .feature-card:hover .custom-icon {
+    transform: scale(1.1);
   }
-  
+  .feature-card:hover .feature-icon{
+    transform: scale(1.1)
+  }
   .feature-text h3 {
     color: #ffffff;
     font-size: 20px;

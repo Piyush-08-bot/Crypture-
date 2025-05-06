@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./navbar.css";
 
+
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -11,6 +12,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">Crypture</div>
+       
+
       
       <ul className={isMobileMenuOpen ? 'nav-links mobile' : 'nav-links'}> {/* change css in mobile or desktop view*/}
         <li><a href="#markets">Markets</a></li>

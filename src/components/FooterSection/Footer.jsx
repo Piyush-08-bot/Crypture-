@@ -1,11 +1,15 @@
 import React from 'react';
 import './footer.css';
 
+
+
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
         {/* Brand + Description */}
+        
+
         <div className="footer-brand">
           <h2 className="brand-title">
             <span className="dot blue"></span>

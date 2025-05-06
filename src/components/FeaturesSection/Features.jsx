@@ -1,5 +1,9 @@
 import React from 'react';
 import './features.css'; // Link to your updated CSS
+import { Activity } from 'lucide-react';
+import { Calculator } from 'lucide-react';
+import { Newspaper } from 'lucide-react';
+import { BriefcaseBusiness } from 'lucide-react';
 
 const Features = () => {
   return (
@@ -11,7 +15,7 @@ const Features = () => {
       <div className="features-container">
         <div className="feature-card">
           <div className="feature-icon">
-            <img src="/icons/price.png" alt="Live Price Updates" />
+          <Activity className='custom-icon' color='#2db4fd'/>
           </div>
           <div className="feature-text">
             <h3>Live Price Updates</h3>
@@ -20,7 +24,7 @@ const Features = () => {
         </div>
         <div className="feature-card">
           <div className="feature-icon">
-            <img src="/icons/convert.png" alt="Crypto Converter" />
+            <Calculator className='custom-icon' color='#2db4fd'/>
           </div>
           <div className="feature-text">
             <h3>Crypto Converter</h3>
@@ -29,7 +33,7 @@ const Features = () => {
         </div>
         <div className="feature-card">
           <div className="feature-icon">
-            <img src="/icons/portfolio.png" alt="Smart Portfolio" />
+            <BriefcaseBusiness className='custom-icon' color='#2db4fd'/>
           </div>
           <div className="feature-text">
             <h3>Smart Portfolio</h3>
@@ -38,7 +42,7 @@ const Features = () => {
         </div>
         <div className="feature-card">
           <div className="feature-icon">
-            <img src="/icons/news.png" alt="Latest News" />
+            <Newspaper className='custom-icon' color='#2db4fd'/>
           </div>
           <div className="feature-text">
             <h3>Latest News</h3>
