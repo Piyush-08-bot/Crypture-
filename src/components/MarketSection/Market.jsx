@@ -1,8 +1,7 @@
-// Market.jsx
+
 
 import React from "react";
-import "./market.css"; // normal CSS
-import LineChartCustomDots from "../chart1.jsx"
+import "./market.css"; 
 
 
 const Market = () => {
@@ -10,9 +9,9 @@ const Market = () => {
     <section className="market-section">
       <h2 className="section-title">Crypto Market Overview</h2>
 
-      {/* Removed the chart component to show only Market section */}
+      
 
-      <LineChartCustomDots/>
+      
 
       <div className="view-more-container">
         <button className="view-more-btn">View More</button>

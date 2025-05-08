@@ -1,6 +1,4 @@
-/* market.css */
 
-/* General styles for the Market section */
 .market-section {
     background-color: #000000;
     padding: 40px;
@@ -17,8 +15,7 @@
     margin-bottom: 20px;
     text-align: center;
   }
-  
-  /* Styles for View More Button */
+
   .view-more-container {
     text-align: center;
     margin-top: 30px;
@@ -26,7 +23,7 @@
   
   .view-more-btn {
     padding: 12px 24px;
-    background-color: #007bff;
+    background-color: #2db4fd;
     color: #fff;
     font-size: 1rem;
     font-weight: 600;
@@ -37,7 +34,7 @@
   }
   
   .view-more-btn:hover {
-    background-color: #0056b3;
+    background-color: #1993d4;
   }
   
   .view-more-btn:focus {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './features.css'; // Link to your updated CSS
+import './features.css';
 import { Activity } from 'lucide-react';
 import { Calculator } from 'lucide-react';
 import { Newspaper } from 'lucide-react';
@@ -42,7 +42,7 @@ const Features = () => {
         </div>
         <div className="feature-card">
           <div className="feature-icon">
-            <Newspaper className='custom-icon' color='#2db4fd'/>
+            <Newspaper  color='#2db4fd'/>
           </div>
           <div className="feature-text">
             <h3>Latest News</h3>
