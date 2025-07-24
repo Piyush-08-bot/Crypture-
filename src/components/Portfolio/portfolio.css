@@ -1,0 +1,288 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.stat-value,
+.balance-value,
+.crypto-name,
+.transaction-type {
+  color: #2db4fd;
+}
+
+.container {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  background: #000;
+}
+
+.app {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.container {
+  flex: 1;
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #111;
+  padding: 1rem 0;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.nav-button.active {
+  color: #2db4fd;
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+.portfolio-stats,
+.wallet-overview {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.stat-card {
+  background: #111;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  min-width: 350px;
+  flex: 0 0 auto;
+}
+
+.stat-label,
+.balance-label,
+.crypto-symbol,
+.transaction-date {
+  color: #ccc;
+}
+
+.crypto-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.crypto-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #111;
+  padding: 2.5rem 2rem;
+  border-radius: 1.25rem;
+  width: 90vw;
+  max-width: 700px;
+  min-width: 320px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .crypto-item {
+    width: 90vw;
+    max-width: 98vw;
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+.crypto-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.crypto-icon {
+  background: #333;
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.crypto-details,
+.wallet-actions,
+.transaction-amount {
+  text-align: right;
+}
+
+.crypto-change {
+  font-weight: bold;
+}
+
+.crypto-change.positive {
+  color: #00ff99;
+}
+
+.crypto-change.negative {
+  color: #ff6666;
+}
+
+.wallet-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.action-button {
+  background: #222;
+  color: #fff;
+  border: 1px solid #333;
+  padding: 0.6rem 1rem;
+  border-radius: 0.3rem;
+  cursor: not-allowed;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.action-button.buy {
+  border-color: #00ff99;
+}
+
+.action-button.sell {
+  border-color: #ff6666;
+}
+
+.transactions {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.transaction-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  min-width: 320px;
+  flex: 0 0 auto;
+}
+
+.transaction-icon {
+  background: #222;
+  color: #fff;
+  border: 1px solid #333;
+  padding: 0.6rem 1rem;
+  border-radius: 0.3rem;
+  cursor: not-allowed;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.transaction-icon.buy {
+  border: 2px solid rgb(139, 247, 139);
+  border-color: #00ff99;
+}
+
+.transaction-icon.sell {
+  border: 2px solid #ff6666;
+  border-color: #ff6666;
+}
+
+.transaction-value {
+  color: #ccc;
+}
+
+.wallet-notice {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ccc;
+}

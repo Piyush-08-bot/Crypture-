@@ -1,6 +1,7 @@
 import React from "react";
 import './hero.css';
-import { GridPatternDemo } from '../GridPatternDemo'; // Importing GridPatternDemo
+import { GridPatternDemo } from '../GridPatternDemo';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -13,7 +14,7 @@ const Hero = () => {
                 <p>Live price tracking, smart conversions, news, and portfolio management - all tailored for crypto enthusiasts.</p>
                 <div className="hero-buttons">
                     <a href="#markets" className="hero-btn">Live Market</a>
-                    <a href="#signup" className="hero-btn outline">Create Portfolio</a>
+                    <Link to="/signup" className="hero-btn outline">Create Account</Link>
                 </div>
             </div>
         </section>

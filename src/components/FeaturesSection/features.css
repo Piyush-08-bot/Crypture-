@@ -59,7 +59,7 @@
     box-shadow: 0 3px 30px #2db4fd4d;
   }
   .feature-card:hover .feature-text h3 {
-    color: #2db4fd; /* Change the color of h3 when hovering the feature-card */
+    color: #2db4fd;
   }
   .feature-icon {
     min-width: 50px;

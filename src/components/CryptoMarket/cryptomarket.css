@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  #crypto-container {
+    min-height: 100vh;
+    padding: 2 rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #main-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #2db4fd;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  #top-coins {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 4rem;
+  }
+  
+  .coin-card {
+    background-color: #000000;
+    border: 1px solid rgba(45, 180, 253, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 0 10px #00000060;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .coin-info {
+    display: flex;
+  align-items: center; /* vertically center logo and name */
+  justify-content: center;
+  gap: 1rem; /* spacing between logo and text */
+  margin-bottom: 1.5rem;
+  }
+  
+  .coin-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .coin-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .coin-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e0e0e0;
+  }
+  
+  .coin-change.up {
+    color: #22c55e;
+  }
+  
+  .coin-change.down {
+    color: #ef4444;
+  }
+  
+  .sparkline {
+    margin-top: 1rem;
+    height: 64px;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  #market-table-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    overflow-x: auto;
+    border: 1px solid #2db4fd;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px #00000040;
+  }
+  
+  #market-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  #market-table thead {
+    background-color: #1e1e1e;
+    color: #2db4fd;
+  }
+  
+  #market-table th, #market-table td {
+    padding: 1.25rem 2rem;
+    font-size: 1rem;
+  }
+  
+  #market-table .coin-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+  }
+  
+  #market-table .row-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  #market-table tr:hover {
+    background-color: rgba(45, 180, 253, 0.1);
+  }
+  
+  .up {
+    color: #22c55e;
+  }
+  
+  .down {
+    color: #ef4444;
+  }
+  
+  #footer {
+    margin-top: 4rem;
+    color: #aaa;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  #loading,
+  #error {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ccc;
+  }
+  
+  #error {
+    color: red;
+  }
+  

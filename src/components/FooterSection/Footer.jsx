@@ -29,12 +29,10 @@ const Footer = () => {
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li>Features</li>
-            <li>Analytics</li>
-            <li>Live Dashboard</li>
-            <li>Testimonials</li>
-            <li>Pricing</li>
-            <li>Latest News</li>
+            <li>Market</li>
+            <li>Converter</li>
+            <li>Portfolio</li>
+            <li>News</li>
           </ul>
         </div>
 
